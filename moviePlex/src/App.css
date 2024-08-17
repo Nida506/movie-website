@@ -1,0 +1,566 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Nav bar styling */
+.bg-nav {
+  background-color: #09090b;
+  width: 100vw;
+}
+
+.bg-search {
+  background-color: white;
+}
+.search-border {
+  border-radius: 10px;
+  border: none;
+}
+.search-text {
+  font-size: 20px;
+  color: black;
+  text-shadow: 0 0 1.2px black;
+}
+.padding-search {
+  padding-bottom: 9px;
+  padding-top: 6px;
+  padding-left: 30px;
+  padding-right: 10rem;
+}
+
+.logo {
+  font-size: 27px;
+  color: #fdba74;
+  text-shadow: 0px 0px 30px #fdba74;
+}
+
+.movieFound {
+  font-size: 23px;
+  color: #fdba74;
+  text-shadow: 0px 0px 100px #fdba74;
+  margin-right: 10px;
+}
+
+/* Movie list */
+
+.img1 {
+  width: 50px;
+  height: 70px;
+  border: 1px solid #fdba74;
+}
+.img2 {
+  width: 125px;
+  height: 150px;
+  border: 3px solid #fdba74;
+}
+.movieList {
+  width: 30rem;
+  height: auto;
+  color: #fdba74;
+  background-color: #09090b;
+
+  margin-left: 7rem;
+}
+li {
+  background-color: #09090b;
+  color: white;
+  border-bottom: 1px solid white;
+  border-top: 1px solid white;
+}
+
+.text-red {
+  color: red;
+}
+.summary {
+  margin-top: 9px;
+  width: 30rem;
+  background-color: white;
+  margin-left: 7rem;
+  border: none;
+  padding: 36px;
+  background-color: #09090b;
+  color: white;
+}
+.movieNameFont {
+  font-size: 17px;
+}
+.movieYearFont {
+  font-size: 17px;
+}
+li:hover {
+  background-color: #431407;
+  color: white;
+}
+.toggleBtn {
+  border: none;
+  font-size: 25px;
+  font-weight: bolder;
+  background-color: #09090b;
+  color: #fdba74;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 0;
+  padding-bottom: 5px;
+  text-align: center;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.marginBox1 {
+  margin-left: 34.5rem;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+
+::placeholder {
+  color: black;
+  text-shadow: 0 0 1.2px black;
+}
+
+input:focus {
+  outline: none;
+}
+
+.stars {
+  display: inline-block;
+  width: 30px;
+  cursor: pointer;
+}
+
+/* task expandar */
+
+.box {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  background-color: #fcf7f7;
+}
+
+.padding-top {
+  padding-top: 3.5rem;
+}
+
+.starBox {
+  display: inline-block;
+  background-color: #431407;
+  border-radius: none;
+  padding: 13px 3px 13px 13px;
+  margin-top: 27px;
+  margin-left: 47px;
+  margin-right: 50px;
+  border-radius: 4px;
+}
+.starText {
+  color: #f59e0b;
+}
+
+.watchedMoviedRateBox {
+  display: inline-block;
+  background-color: #431407;
+  border-radius: none;
+  padding: 13px 63px 13px 40px;
+  margin-top: 27px;
+  margin-left: 47px;
+  margin-right: 50px;
+  border-radius: 4px;
+  color: white;
+  font-size: 19px;
+  font-weight: bold;
+  box-shadow: 0px 0px 3px black;
+}
+
+.colorBrown {
+  color: #fdba74;
+}
+
+.addListBtn {
+  box-shadow: 0px 0px 10px #f59e0b;
+  margin-left: 3.5rem;
+  border: none;
+}
+.addListBtn:hover {
+  box-shadow: 0px 0px 15px #f59e0b;
+}
+.text-Plot {
+  text-align: justify;
+}
+.delBtn {
+  position: relative;
+  left: 8rem;
+  height: 1.8rem;
+  width: 1.8rem;
+  border-radius: 50px;
+  border: none;
+  background-color: #dc2626;
+  color: white;
+  margin-top: 17px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.delBtn:hover {
+  box-shadow: 0px 0px 10px black;
+}
+
+.currency {
+  text-shadow: 0 0 1.2px black;
+}
+
+.currencyConvertor {
+  text-shadow: 0 0 1.2px black;
+}
+.amountInput {
+  text-shadow: 0 0 1.2px black;
+  border-radius: 2px;
+}
+.padding {
+  padding: 0px 3px;
+}
+
+/* media queries */
+
+@media (min-width: 0px) and (max-width: 575px) {
+  .bg-nav {
+    background-color: #09090b;
+    width: 100vw;
+  }
+  .search-text {
+    font-size: 14px;
+    color: black;
+    text-shadow: 0 0 1.2px black;
+  }
+  .padding-search {
+    margin-right: 0px;
+    margin-top: 5px;
+    padding-right: 0rem;
+    padding-left: 15px;
+  }
+  .logo {
+    font-size: 27px;
+    color: #fdba74;
+    text-shadow: 0px 0px 30px #fdba74;
+  }
+
+  .movieFound {
+    display: none;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+  }
+
+  .movieList {
+    width: 100vw;
+    height: auto;
+    margin-left: 0rem;
+  }
+
+  .summary {
+    width: 100vw;
+    margin-left: 0rem;
+  }
+
+  .font {
+    font-size: 14px;
+  }
+
+  .delBtn {
+    position: relative;
+    left: 2rem;
+  }
+  .toggleBtn {
+    display: none;
+  }
+
+  .stars {
+    display: inline-block;
+    width: 21px;
+    cursor: pointer;
+  }
+  .addListBtn {
+    padding: 8px 20px;
+    margin-left: 3rem;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 450px) {
+  .delBtn {
+    position: relative;
+    left: 5rem;
+  }
+  .padding {
+    padding: 0px 10px;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 500px) {
+  .delBtn {
+    position: relative;
+    left: 7rem;
+  }
+  .padding {
+    padding: 0px 10px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 550px) {
+  .delBtn {
+    position: relative;
+    left: 10rem;
+  }
+  .padding {
+    padding: 0px 10px;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 575px) {
+  .delBtn {
+    position: relative;
+    left: 12rem;
+  }
+  .padding {
+    padding: 0px 15px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .bg-nav {
+    width: 100vw;
+  }
+  .search-text {
+    font-size: 14px;
+    color: black;
+    text-shadow: 0 0 1.2px black;
+  }
+  .padding-search {
+    margin-right: 0px;
+    margin-top: 5px;
+    padding-right: 0rem;
+    padding-left: 15px;
+  }
+  .logo {
+    font-size: 30px;
+    color: #fdba74;
+    text-shadow: 0px 0px 30px #fdba74;
+  }
+
+  .movieFound {
+    display: none;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+  }
+
+  .movieList {
+    width: 100vw;
+    height: auto;
+    margin-left: 0px;
+  }
+
+  .summary {
+    width: 100vw;
+    margin-left: 0px;
+  }
+
+  .font {
+    font-size: 18px;
+  }
+
+  .delBtn {
+    position: relative;
+    left: 22rem;
+  }
+  .toggleBtn {
+    display: none;
+  }
+  .padding {
+    padding: 0px 20px;
+  }
+  .stars {
+    display: inline-block;
+    width: 30px;
+    cursor: pointer;
+  }
+  .addListBtn {
+    padding: 8px 30px;
+    margin-left: 5rem;
+  }
+}
+
+@media (min-width: 575px) and (max-width: 650px) {
+  .delBtn {
+    position: relative;
+    left: 15.5rem;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 767px) {
+  .delBtn {
+    position: relative;
+    left: 20rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .bg-nav {
+    width: 100vw;
+  }
+  .search-text {
+    font-size: 14px;
+    color: black;
+    text-shadow: 0 0 1.2px black;
+  }
+  .padding-search {
+    margin-right: 0px;
+    margin-top: 5px;
+    padding-right: 0rem;
+    padding-left: 15px;
+  }
+  .logo {
+    font-size: 30px;
+    color: #fdba74;
+    text-shadow: 0px 0px 30px #fdba74;
+  }
+
+  .movieFound {
+    display: inline;
+    margin-right: 20px;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .movieList {
+    width: 49vw;
+    height: auto;
+    margin-left: 5px;
+  }
+
+  .summary {
+    width: 49vw;
+    margin-left: 5px;
+  }
+
+  .font {
+    font-size: 14px;
+  }
+
+  .delBtn {
+    position: relative;
+    left: 2rem;
+  }
+  .toggleBtn {
+    display: none;
+  }
+  .padding {
+    padding: 0px 10px;
+  }
+  .stars {
+    display: inline-block;
+    width: 20px;
+    cursor: pointer;
+  }
+  .addListBtn {
+    padding: 10px 30px;
+    margin-left: 2rem;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 872px) {
+  .delBtn {
+    position: relative;
+    left: 3rem;
+  }
+}
+
+@media (min-width: 872px) and (max-width: 992px) {
+  .delBtn {
+    position: relative;
+    left: 5rem;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .bg-nav {
+    width: 100vw;
+  }
+  .search-text {
+    font-size: 14px;
+    color: black;
+    text-shadow: 0 0 1.2px black;
+  }
+  .padding-search {
+    margin-right: 0px;
+    margin-top: 5px;
+    padding-right: 0rem;
+    padding-left: 15px;
+  }
+  .logo {
+    font-size: 30px;
+    color: #fdba74;
+    text-shadow: 0px 0px 30px #fdba74;
+  }
+
+  .movieFound {
+    display: inline;
+    margin-right: 20px;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .movieList {
+    width: 49vw;
+    height: auto;
+    margin-left: 5px;
+  }
+
+  .summary {
+    width: 49vw;
+    margin-left: 5px;
+  }
+
+  .font {
+    font-size: 14px;
+  }
+
+  .delBtn {
+    position: relative;
+    left: 6rem;
+  }
+  .toggleBtn {
+    display: none;
+  }
+  .padding {
+    padding: 0px 10px;
+  }
+  .stars {
+    display: inline-block;
+    width: 25px;
+    cursor: pointer;
+  }
+  .addListBtn {
+    padding: 10px 30px;
+    margin-left: 4rem;
+  }
+}
+
+@media (min-width: 1050px) and (max-width: 1200px) {
+  .delBtn {
+    position: relative;
+    left: 10rem;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .addListBtn {
+    padding: 10px 50px;
+    margin-left: 4rem;
+  }
+}
