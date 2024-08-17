@@ -1,5 +1,0 @@
-{
-  "eslint.debug": true,
-  "eslint.codeActionsOnSave.mode": "problems",
-  "git.ignoreLimitWarning": true
-}

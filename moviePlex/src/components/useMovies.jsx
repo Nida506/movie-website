@@ -13,7 +13,7 @@ const useMovies = (query, key, setSelectedId) => {
       setError(false);
       try {
         const response = await fetch(
-          `http://www.omdbapi.com/?apikey=${key}&s=${query}`,
+          `https://www.omdbapi.com/?apikey=${key}&s=${query}`,
           { signal: controller.signal }
         );
 
