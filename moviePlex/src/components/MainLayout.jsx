@@ -52,7 +52,7 @@ const MainLayout = () => {
       setMovieDetailError(false);
       try {
         const response = await fetch(
-          `http://www.omdbapi.com/?apikey=${key}&i=${selectedId}`
+          `https://www.omdbapi.com/?apikey=${key}&i=${selectedId}`
         );
 
         if (!response.ok)
