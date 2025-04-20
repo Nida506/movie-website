@@ -53,13 +53,11 @@ const SelectedMovieDetails = ({
           <img className="img2 ms-5 me-0" src={movieDetail.Poster} alt="" />
           <div className=" mt-3 ms-3  fw-bold d-flex flex-column align-items-center justify-content-center">
             <h5>{movieDetail.Title}</h5>
-            <p className="p-0 m-0 text-white">
+            <p className="p-0 m-0 ">
               {movieDetail.Released} &bull; {movieDetail.Runtime}
             </p>
-            <p className="p-0 m-0 text-white">{movieDetail.Genre}</p>
-            <p className="p-0 m-0 text-white">
-              ⭐ {movieDetail.imdbRating} IMDb rating
-            </p>
+            <p className="p-0 m-0 ">{movieDetail.Genre}</p>
+            <p className="p-0 m-0 ">⭐ {movieDetail.imdbRating} IMDb rating</p>
           </div>
         </div>
       </header>
@@ -67,7 +65,7 @@ const SelectedMovieDetails = ({
       <section>
         {isWatched ? (
           <div className="watchedMoviedRateBox">
-            <p className="mt-3">
+            <p className="mt-3 text-black">
               You already rated movie ⭐ {watchedUserRating}
             </p>
           </div>
@@ -80,10 +78,8 @@ const SelectedMovieDetails = ({
         )}
 
         <div className="mt-4 ms-5 me-5">
-          <em className="fw-bold text-white me-5">{movieDetail.Plot}</em>
-          <p className="mt-3 text-white fw-bold me-2">
-            Starring {movieDetail.Actors}
-          </p>
+          <em className="fw-bold  me-5">{movieDetail.Plot}</em>
+          <p className="mt-3  fw-bold me-2">Starring {movieDetail.Actors}</p>
           <p className="fw-bold">Directed by {movieDetail.Director}</p>
         </div>
       </section>

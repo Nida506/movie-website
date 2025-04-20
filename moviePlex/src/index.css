@@ -4,6 +4,8 @@
 
 body {
   margin: 0;
-  background-color: #7c2d12;
+  background-color: #2dd4bf;
   place-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }

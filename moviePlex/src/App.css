@@ -6,7 +6,8 @@
 
 /* Nav bar styling */
 .bg-nav {
-  background-color: #09090b;
+  background-color: #2dd4bf;
+
   width: 100vw;
 }
 
@@ -15,12 +16,11 @@
 }
 .search-border {
   border-radius: 10px;
-  border: none;
+  border: 2px solid black;
 }
 .search-text {
   font-size: 20px;
   color: black;
-  text-shadow: 0 0 1.2px black;
 }
 .padding-search {
   padding-bottom: 9px;
@@ -31,14 +31,13 @@
 
 .logo {
   font-size: 27px;
-  color: #fdba74;
-  text-shadow: 0px 0px 30px #fdba74;
+  color: black;
 }
 
 .movieFound {
   font-size: 23px;
-  color: #fdba74;
-  text-shadow: 0px 0px 100px #fdba74;
+  color: black;
+
   margin-right: 10px;
 }
 
@@ -54,19 +53,23 @@
   height: 150px;
   border: 3px solid #fdba74;
 }
+.movieBox {
+  border-bottom: 2px solid black;
+  border-radius: 0px;
+}
 .movieList {
   width: 30rem;
   height: auto;
-  color: #fdba74;
-  background-color: #09090b;
-
+  color: black;
+  background-color: white;
+  border-radius: none;
   margin-left: 7rem;
 }
 li {
-  background-color: #09090b;
-  color: white;
-  border-bottom: 1px solid white;
-  border-top: 1px solid white;
+  background-color: white;
+  color: black;
+  border-bottom: 2px solid rgb(232, 224, 224);
+  cursor: pointer;
 }
 
 .text-red {
@@ -77,10 +80,8 @@ li {
   width: 30rem;
   background-color: white;
   margin-left: 7rem;
-  border: none;
+  border-bottom: 2px solid black;
   padding: 36px;
-  background-color: #09090b;
-  color: white;
 }
 .movieNameFont {
   font-size: 17px;
@@ -89,15 +90,14 @@ li {
   font-size: 17px;
 }
 li:hover {
-  background-color: #431407;
-  color: white;
+  background-color: white;
 }
 .toggleBtn {
   border: none;
   font-size: 25px;
   font-weight: bolder;
   background-color: #09090b;
-  color: #fdba74;
+  color: white;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 0;
@@ -117,7 +117,6 @@ li:hover {
 
 ::placeholder {
   color: black;
-  text-shadow: 0 0 1.2px black;
 }
 
 input:focus {
@@ -137,6 +136,7 @@ input:focus {
   border: 1px solid #ccc;
   border-radius: 7px;
   background-color: #fcf7f7;
+  color: black;
 }
 
 .padding-top {
@@ -145,9 +145,9 @@ input:focus {
 
 .starBox {
   display: inline-block;
-  background-color: #431407;
+
   border-radius: none;
-  padding: 13px 3px 13px 13px;
+  padding: 13px 13px 13px 13px;
   margin-top: 27px;
   margin-left: 47px;
   margin-right: 50px;
@@ -159,7 +159,7 @@ input:focus {
 
 .watchedMoviedRateBox {
   display: inline-block;
-  background-color: #431407;
+
   border-radius: none;
   padding: 13px 63px 13px 40px;
   margin-top: 27px;
@@ -172,17 +172,13 @@ input:focus {
   box-shadow: 0px 0px 3px black;
 }
 
-.colorBrown {
-  color: #fdba74;
-}
-
 .addListBtn {
-  box-shadow: 0px 0px 10px #f59e0b;
+  margin-top: 2px;
   margin-left: 3.5rem;
-  border: none;
+  border: 2px solid #2dd4bf;
 }
 .addListBtn:hover {
-  box-shadow: 0px 0px 15px #f59e0b;
+  box-shadow: 0px 0px 15px #2dd4bf;
 }
 .text-Plot {
   text-align: justify;
@@ -194,7 +190,7 @@ input:focus {
   width: 1.8rem;
   border-radius: 50px;
   border: none;
-  background-color: #dc2626;
+  background-color: red;
   color: white;
   margin-top: 17px;
   font-size: 0.8rem;
@@ -224,13 +220,11 @@ input:focus {
 
 @media (min-width: 0px) and (max-width: 575px) {
   .bg-nav {
-    background-color: #09090b;
     width: 100vw;
   }
   .search-text {
     font-size: 14px;
     color: black;
-    text-shadow: 0 0 1.2px black;
   }
   .padding-search {
     margin-right: 0px;
@@ -240,8 +234,6 @@ input:focus {
   }
   .logo {
     font-size: 27px;
-    color: #fdba74;
-    text-shadow: 0px 0px 30px #fdba74;
   }
 
   .movieFound {
@@ -333,7 +325,6 @@ input:focus {
   .search-text {
     font-size: 14px;
     color: black;
-    text-shadow: 0 0 1.2px black;
   }
   .padding-search {
     margin-right: 0px;
@@ -343,8 +334,6 @@ input:focus {
   }
   .logo {
     font-size: 30px;
-    color: #fdba74;
-    text-shadow: 0px 0px 30px #fdba74;
   }
 
   .movieFound {
@@ -412,7 +401,6 @@ input:focus {
   .search-text {
     font-size: 14px;
     color: black;
-    text-shadow: 0 0 1.2px black;
   }
   .padding-search {
     margin-right: 0px;
@@ -422,8 +410,6 @@ input:focus {
   }
   .logo {
     font-size: 30px;
-    color: #fdba74;
-    text-shadow: 0px 0px 30px #fdba74;
   }
 
   .movieFound {
@@ -492,7 +478,6 @@ input:focus {
   .search-text {
     font-size: 14px;
     color: black;
-    text-shadow: 0 0 1.2px black;
   }
   .padding-search {
     margin-right: 0px;
@@ -502,8 +487,6 @@ input:focus {
   }
   .logo {
     font-size: 30px;
-    color: #fdba74;
-    text-shadow: 0px 0px 30px #fdba74;
   }
 
   .movieFound {
